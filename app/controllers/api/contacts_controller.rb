@@ -9,7 +9,7 @@ class Api::ContactsController < ApplicationController
       first_name = params[:body_first_name],
       last_name = params[:body_last_name],
       email = params[:body_email], 
-      phone_number = params[:body_phone_number])
+      result = phone_number = params[:body_phone_number])
     @contact.save 
     render "show.json.jbuilder"
   end
